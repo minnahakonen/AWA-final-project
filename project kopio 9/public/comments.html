@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="javascripts/comments.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+    </head>
+    <body>
+      <nav>
+          <div class="nav-wrapper teal lighten-1" id="link-list">
+            <a href="/index.html" class="brand-logo left">PostCodeSnippets</a>
+            <ul id="nav-mobile" class="right">
+             <li><a href="posts.html">Back</a></li>
+            </ul>
+          </div>
+        </nav>
+        <br>
+        
+        <div class="container" id="showitems-row">
+          <div class="card">
+            <div class="card-content" id="card-content-id">
+              
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs ">
+                <li class="tab"><a id="comment-button" class="waves-effect waves-light teal lighten-3 btn">Leave a Comment</a></li>
+                <li class="tab"><a id="voteup-button" class="waves-effect waves-light teal lighten-3 btn">Vote up</a></li>
+                <li class="tab"><a id="votedown-button" class="waves-effect waves-light teal lighten-3 btn">Vote down</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4" id="card-comments-id">
+              <ul class="collection" id="card-comments-id"></ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12" id="comment-textarea">
+                
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-panel" id="message-panel">
+        </div>
+    </body>
+</html>
