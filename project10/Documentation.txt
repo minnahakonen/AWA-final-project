@@ -1,8 +1,10 @@
 Technology choices
 
-The application backend is implemented with Node.js and utilizing Express application generator. Database is created with MongoDB and also Mongoose library is utilized. Frontend is implemented with public HTML and JavaScript files and utilizing Materialize framework to get application responsive.
+The application backend is implemented with Node.js and utilizing Express application generator. Database is created with MongoDB and also Mongoose library
+is utilized. Frontend is implemented with public HTML and JavaScript files and utilizing Materialize framework to get application responsive.
 
-Authentication and authorization is implemented with utilizing Express validator, Bcrypt and JWT libraries. Authentication is based to storing JWT into the local web storage.
+Authentication and authorization is implemented with utilizing Express validator, Bcrypt and JWT libraries. Authentication is based to storing JWT 
+into the local web storage.
 
 The application server is using port 3000. MongoDB is using port 27017 and database is named testdb as it was in course's weekly tasks. Nodemon tool is used to help developing (for automatically restarting the application when file changes).
 
@@ -20,7 +22,9 @@ Start application using npm start
 
 User Manual
 
-In PostCodeSnippets application users can register, login and post new code snippets. Authenticated users can also comment posts and vote up or down posts and comments. Authenticated users can see their own profile page, where user email address, registration date and user bio are listed. User can delete or edit own posts and comments in profile page. Non-authenticated users can browse all the other content but they cannot post, edit, or comment items and they don't have access into the profile page.
+In PostCodeSnippets application users can register, login and post new code snippets. Authenticated users can also comment posts and vote up or 
+down posts and comments. Authenticated users can see their own profile page, where user email address, registration date and user bio are listed. 
+User can delete or edit own posts and comments in profile page. Non-authenticated users can browse all the other content but they cannot post, edit, or comment items and they don't have access into the profile page.
 
 If user wants to just browse posts and comments without login, user needs to click 'Browse (also without login)' link in the index page. User is redirected to the post page where the post title, beginning of the post, comments and vote counts and secondary content button is displayed in the table. User can filter posts displayed with search under the table. Unauthorized user can see also send new post form but that doesn't work with unauthorized users. 
 
