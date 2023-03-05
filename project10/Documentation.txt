@@ -1,0 +1,69 @@
+Documentation
+There needs to be documentation describing the technology choices, installation guidelines and user manual
+
+Technology choices
+
+The application backend is implemented with Node.js and utilizing Express application generator. Database is created with MongoDB and also Mongoose library is utilized. Frontend is implemented with public HTML and JavaScript files and utilizing Materialize framework to get application responsive.
+
+Authentication and authorization is implemented with utilizing Express validator, Bcrypt and JWT libraries. Authentication is based to storing JWT into the local web storage.
+
+The application server is using port 3000. MongoDB is using port 27017 and database is named testdb as it was in course's weekly tasks. Nodemon tool is used to help developing (for automatically restarting the application when file changes).
+
+Installation guidelines
+
+Prequisities:
+MongoDB is installed
+All dependencies are installed using npm install
+
+Change directory into the application 'project' -directory
+
+Start application using npm start
+
+
+User Manual
+
+In PostCodeSnippets application users can register, login and post new code snippets. Authenticated users can also comment posts and vote up or down posts and comments. Authenticated users can see their own profile page, where user email address, registration date and user bio are listed. User can delete or edit own posts and comments in profile page. Non-authenticated users can browse all the other content but they cannot post, edit, or comment items and they don't have access into the profile page.
+
+If user wants to just browse posts and comments without login, user needs to click 'Browse (also without login)' link in the index page. User is redirected to the post page where the post title, beginning of the post, comments and vote counts and secondary content button is displayed in the table. User can filter posts displayed with search under the table. Unauthorized user can see also send new post form but that doesn't work with unauthorized users. 
+
+By clicking post rows button in view column user is redirected in the comments page, where the selected post and it's comments and timestamps when posts and comments are created and last updated are displayed as a whole. Unauthorized user can also see buttons to comment and vote but those don't work with unauthorized users.
+
+If user wants to login, first user needs to register if account not yet exist. User can get back to the index page for example clicking PostCodeSnippets logo in the navbar. There user first select Register. User name must be like an email address and password's minimum length is 8 characters and password must contain in minimum one lowercase letter, one uppercase letter, one number, and one symbol. If registration is successful, user is redirected in the login page where user can login with their account. If the login is successfully, the user is redirected to the posts page, where user can see own user email address and logout with the navbar. A submit form for sending new posts is now enabled. Also when redirecting to read specific posts, user can now comment and vote posts. Only one vote per user for both a post or a comment is allowed. Both the posts and the comments can be voted individually.
+
+When authenticated user clicks username in the navbar, user is redirected in the user page, where user email address, register date, and user bio are listed. If user has content, there are also buttons to delete and to edit own posts and comments. Clicking the delete button deletes current post or comment and if user clicks the edit button, edit form is shown under the list and user can modify post or comment, and send it when finished.
+
+If JWT expires during the session, user is redirected to the login page and the user must login again. Also, clicking logout button removes the JWT and user is redirected to the index page.
+
+
+Features implemented and the number of points aimed 
+
+Mandatory requirements. 25 points:
+	- Implementation of backend with Node.js and Express
+	- Utilization of database MongoDB
+	- Authentication
+	- Users have to have an option to register and login
+	- JWT used for authorization
+	- Only authenticated users can post, comment and vote
+	- Authenticated users can:
+	- Post new code snippets
+	- Comment on existing posts
+	- Non-authenticated users can see posts, comments and vote counts
+	- There is some page listing all the post, after opening one post, comments are also listed
+	- Responsive design, Materialize library is used
+	- Documentation
+
+Other features implemented:
+	- Users can edit their own comments/posts. 4 points
+	- Admin account with rights to edit all the post and comments and delete content. When post is deleted, all its comments are also deleted. 3 points
+	- Search that can filter out only those messages that have the searched keyword. 2 points
+	- Vote (up or down) posts and comments (only one vote per user). 3 points
+	- User can click username and see own user profile page where name, register date, and user bio is listed. 2 points
+	- Last edited timestamp is stored and shown with posts/comments. 2 points
+
+Total points aimed: 41 points
+
+
+
+
+
+
