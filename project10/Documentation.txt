@@ -15,7 +15,7 @@ Prequisities:
 MongoDB is installed
 All dependencies are installed using npm install
 
-Change directory into the application 'project' -directory
+Change directory into the application 'project10' -directory
 
 Start application using npm start
 
