@@ -1,6 +1,3 @@
-Documentation
-There needs to be documentation describing the technology choices, installation guidelines and user manual
-
 Technology choices
 
 The application backend is implemented with Node.js and utilizing Express application generator. Database is created with MongoDB and also Mongoose library is utilized. Frontend is implemented with public HTML and JavaScript files and utilizing Materialize framework to get application responsive.
