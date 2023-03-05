@@ -11,6 +11,7 @@ Installation guidelines
 Prequisities:
 MongoDB is installed
 All dependencies are installed using npm install
+Create .env file into the project10 folder and add some SECRET key
 
 Change directory into the application 'project10' -directory
 
